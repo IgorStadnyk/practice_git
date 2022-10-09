@@ -103,7 +103,7 @@ git add app.py && git -c user.name='Narayan Nadella' -c user.email='narayan.nade
 git checkout main
 
 
-echo
+echo:
 echo
 echo "Repo initialized successfully! go ahead with your solution..."
 echo
