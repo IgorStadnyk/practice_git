@@ -1,0 +1,82 @@
+# Git Basics (commit, diff, branches)
+
+1.echo "1" >> abc.txt
+2.red
+3.red
+4.green,green
+5.echo "What is the color of file abc.txt in Git status view?" >> abc.txt
+6.blue,blue,differences Changes not staged for commit: modified:   abc.txt (the changes exists only in working tree)
+7.git diff HEAD
+8.because no changes was added to index that are not committed
+9.no branch like this or tag was created so nothing compare to
+10.git add abc.txt
+11.nothing because no more differences between working tree and index
+12.git diff --staged
+13.What is the file's color if you open the repo as a Pycharm project?
+14.No ,because the "git diff main" show all changes from working tree to main that accrued and "git diff --staged" only between index to Head
+15.because 1 change is for adding to index and the other to commit the change to index
+16.git reset --hard
+
+# Resolve conflicts
+
+1.nano abc.txt (main
+bugfix/fix_readme_typo
+bugfix/open_kibana_port
+dev
+feature/data_retention_policy
+feature/elasticsearch_helm_chart
+feature/upgrade_angular_version
+feature/version1
+feature/version2
+reset_question)
+cat abc.txt
+2.git checkout -b feature/lambda_migration
+3.git merge feature/version1
+4.feature/version2 >> merge selected into current
+5.
+   1.Merge
+   2.All
+   3.Annotate with Git Blame
+   4.Accept John Doe's port number (8081), deny Narayan's port (8082)
+   5.Accept the function name of Narayan Nadella (get_profile_picture), Block John's name
+6.needed to commit the abc.txt file that consists now with branches list
+
+# Cherry picking
+
+1.git checkout -b feature/lambda_migration2
+2.log serch tab "feature/lambda_migration"
+3.pick commits in following order
+    1."use correct lock type in reconnect()"
+    2."Restrict the extensions that can be disabled"
+4.'.env' , 'config.json'
+5.different commits can have different revisions of both files
+
+
+# Changes in working tree and switch branches
+
+1.feature/lambda_migration2
+2.touch take.txt
+3.untracked files prevent checkout
+  approaches suggested by git "Move or commit them before checkout"
+4.Force Checkout
+5.yes
+6.take.txt not existing pycharm erased uncommitted changes and move the to working branch as commited
+
+# Reset
+
+1.Checkout reset_question branch
+2.
+   1.got back 9.txt to index from commited stage(last commit). --soft HEAD~1 will remove the last commit from the current branch, but the file changes will stay in your working tree. Also, the changes will stay on your index
+   2.10.txt,9.txt,8.txt back to working tree .When "removing" a commit with git reset --mixed HEAD~1 you will still keep the changes in your working tree but not on the index
+   3.it deleted the changes and the last commit and go to previous committed change.When using git reset --hard HEAD~1 you will lose all uncommitted changes and all untracked files in addition to the changes introduced in the last commit. The changes won't stay in your working tree so doing a git status command will tell you that you don't have any changes in your repository
+   4.this command commits commit that reversing last change as a new commit (file 4.txt and 5.txt existing again and previous was deleted).
+   "git revert" record a new commit with the changes introduced by reverting the last commit.Note also that with “git reset” you specified “HEAD~1” because the reset command sets a new HEAD position while reverting actually reverts the commit specified.As a consequence, you will have to commit the changes again for the files to be reverted and for the commit to be undone.
+3.The HEAD~1 is a special notation for the commit that HEAD used to be at prior to the original reset commit (1 change ago). You may also use any other valid commit reference like HEAD~2 means "where HEAD used to be two moves ago".
+
+
+# Working with GitHub
+
+1.IgorStadnyk/practice_git
+2.done
+3.done
+4.https://github.com/IgorStadnyk/practice_git.git
